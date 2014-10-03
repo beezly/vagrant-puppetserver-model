@@ -21,8 +21,8 @@ node default {
   }
   
   augeas {'puppet server':
-    context => '/files/setc/puppet/puppet.conf',
-    changes => 'set main/server localhost',
+    context => '/files/etc/puppet/puppet.conf',
+    changes => 'set agent/server localhost',
     require => Package['puppet'],
   }
   
