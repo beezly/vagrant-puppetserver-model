@@ -1,0 +1,3 @@
+---
+apt::update_timeout: 10
+apt::update_tries: 3
